@@ -2,24 +2,36 @@
 css
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
+  text-align: center;
   background: #f9f9f9;
+  padding: 20px;
 }
-
-header, section, footer {
-  margin-bottom: 40px;
+.container {
+  max-width: 600px;
+  margin: auto;
 }
-
-h1 {
-  font-size: 2rem;
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
-
-#projects-container > div {
-  margin-bottom: 10px;
+.input-section input, textarea {
+  width: 100%;
   padding: 10px;
-  background: #fff;
+  margin: 5px 0;
+}
+button {
+padding: 10px 20px;
+  margin-top: 10px;
+}
+.project {
+  background: white;
+  padding: 15px;
+  margin-top: 10px;
+  text-align: left;
   border: 1px solid #ddd;
 }
+
+
 
 
