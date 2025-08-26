@@ -1,39 +1,29 @@
-
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio CMS</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1 id="name"></h1>
-    <p id="title"></p>
-  </header>
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <img src="profile.jpg" alt="My Photo" class="profile-img" />
+    
+    <div class="input-section">
+      <input type="text" id="projectTitle" placeholder="Enter Project Title" />
+      <textarea id="projectDesc" placeholder="Enter Project Description"></textarea>
+      <button onclick="addProject()">Add Project</button>
+    </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p id="about-text"></p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul id="skills-list"></ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div id="projects-container"></div>
-  </section>
-
-  <footer>
-    <p id="footer-text"></p>
-  </footer>
+    <div id="projectsContainer"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
